@@ -5,3 +5,8 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
 })
+
+// vite.config.js
+export default {
+  base: './', // 👈 Esto hace que las rutas sean relativas (necesario en Vercel)
+};
